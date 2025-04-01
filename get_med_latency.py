@@ -18,8 +18,9 @@ def main():
         sys.exit(1)
 
     median_latency = data['latency'].median()
+    p95 = data['latency'].quantile(0.95)
     print("Median latency:", median_latency)
-
+    print("95th percentile latency:", p95)
 if __name__ == "__main__":
     main()
 

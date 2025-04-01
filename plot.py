@@ -12,8 +12,8 @@ import numpy as np
 from collections import defaultdict
 
 # Configuration
-#LOG_TYPES = ['Ingress', 'StepA', 'StepB', 'StepD', 'StepE']
-LOG_TYPES = ['Monolith']
+LOG_TYPES = ['Ingress', 'StepA', 'StepB', 'StepD', 'StepE']
+#LOG_TYPES = ['Monolith']
 LOG_DIR = './logs'
 OUTPUT_DIR = './charts'
 

@@ -371,7 +371,7 @@ if __name__ == "__main__":
     ]
     event_pairs_monolith = [('Client_Send', 'Monolith_Exit') ]
     event_pairs_simple = [('Client_Send', 'Ingress_Exit')]
-    results = analyzer.analyze_event_pairs(event_pairs)
+    results = analyzer.analyze_event_pairs(event_pairs_monolith)
     #print(results)
     print("\n\n\n\n")
 
