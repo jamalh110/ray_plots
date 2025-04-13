@@ -1,0 +1,3 @@
+Step,TotalRequests,AvgLatency_ms,Throughput_reqPerSec
+Ingress_Mono,2000,671.452,9.928613270584497
+Monolith,2000,464.418,9.931768748696456

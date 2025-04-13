@@ -364,6 +364,7 @@ if __name__ == "__main__":
     ('Client_Send', 'Ingress_Enter'),
     #('StepB_Exit', "StepC_Enter"),
     ('Ingress_Enter', 'StepA_Enter'),
+    ('Ingress_Enter', 'StepB_Enter'),
     ('StepA_Exit', "StepD_Enter"),
     ('StepB_Exit', "StepD_Enter"),
     #('StepC_Exit', "StepD_Enter"),
@@ -371,7 +372,8 @@ if __name__ == "__main__":
     ]
     event_pairs_monolith = [('Client_Send', 'Monolith_Exit') ]
     event_pairs_simple = [('Client_Send', 'Ingress_Exit')]
-    results = analyzer.analyze_event_pairs(event_pairs_monolith)
+    event_pairs_ppl2_mono = [('Ingress_Mono_Numpy_Converted', 'Monolith_Enter')]
+    results = analyzer.analyze_event_pairs(event_pairs_ppl2_mono)
     #print(results)
     print("\n\n\n\n")
 

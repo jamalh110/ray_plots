@@ -19,8 +19,15 @@ def main():
 
     median_latency = data['latency'].median()
     p95 = data['latency'].quantile(0.95)
+    length = len(data['latency'])
+    print("Number of records:", length)
+    warmup_num = 50
+    median_latency_after_warmup = data['latency'][warmup_num:].median()
+    p95_latency_after_warmup = data['latency'][warmup_num:].quantile(0.95)
     print("Median latency:", median_latency)
     print("95th percentile latency:", p95)
+    #print("Median latency after warmup:", median_latency_after_warmup)
+    #print("95th percentile latency after warmup:", p95_latency_after_warmup)
 if __name__ == "__main__":
     main()
 

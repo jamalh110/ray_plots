@@ -12,7 +12,9 @@ import numpy as np
 from collections import defaultdict
 
 # Configuration
-LOG_TYPES = ['Ingress', 'StepA', 'StepB', 'StepD', 'StepE']
+#LOG_TYPES = ['Ingress', 'StepA', 'StepB', 'StepD', 'StepE']
+LOG_TYPES = ['Ingress', 'StepAudio', 'StepSearch', 'StepToxCheck', 'StepTTS']
+#LOG_TYPES = ['Ingress_Mono', 'Monolith']
 #LOG_TYPES = ['Monolith']
 LOG_DIR = './logs'
 OUTPUT_DIR = './charts'
@@ -21,10 +23,15 @@ OUTPUT_DIR = './charts'
 COLORS = {
     'Monolith': '#82ca9d',
     'Ingress': '#8884d8',
+    'Ingress_Mono': '#8884d8',
     'StepA': '#82ca9d',
+    'StepAudio': '#82ca9d',
     'StepB': '#ffc658',
+    'StepSearch': '#ffc658',
     'StepD': '#ff8042',
-    'StepE': '#0088fe'
+    'StepToxCheck': '#ff8042',
+    'StepE': '#0088fe',
+    'StepTTS': '#0088fe'
 }
 
 # Ensure output directory exists
